@@ -1,3 +1,5 @@
+SRC_DIR=$(pwd)
+cd /usr/local/bin
 for f in dofind doexec; do
-	ln -s ./$f /usr/local/bin/
+	ln -s $SRC_DIR/$f .
 done
