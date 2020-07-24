@@ -1,2 +1,4 @@
 #!/bin/bash
-docker exec -it $(dofind "$1") $2
+MATCH=$1
+shift
+docker exec -it $(dofind "$MATCH") $*
